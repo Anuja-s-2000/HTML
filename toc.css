@@ -1,0 +1,71 @@
+body{
+
+    background-color: #fff; 
+    font-family:Verdana;
+    font-size: 14px;
+}
+.container{
+    margin-left: 30px;
+    width:90%;
+}
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 10px 0;
+  height:50px;
+ 
+  
+}
+
+.tab p {
+  position:absolute;
+  float: left;
+  margin-left:10px;
+  margin-top: 10px;
+}
+.tab button {
+  position:absolute;
+  border-radius:15px;
+  width:150px;
+  height:30px;
+  background-color: orange;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left:78.5%;
+  margin-top: 10px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+header{
+  border-bottom:4px;
+}
+
+table th, table td{
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-top:10px;
+    padding-bottom: 10px;
+    width:auto;
+}
+img{
+   width:40px;
+   height:40px; 
+}
+
+.ed {
+    position:absolute;
+    border-radius:15px;
+    width:55px;
+    height:30px;
+    background-color:#fff;
+    border: 2px solid rgb(5, 130, 248);
+    outline: none;
+    cursor: pointer;
+    margin-top: -10px;
+    color:rgb(5, 130, 248);
+  }

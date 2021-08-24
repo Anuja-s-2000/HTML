@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Assignment</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <form>
+            <div class="container">
+            <label for="name">PRODUCT NAME</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="unit">UNIT OF MEASUREMENT</label><br>
+            <input type="text" id="unit" name="unit" required><br>
+            <label for="price">PRICE</label><br>
+            <input type="number" id="price" name="price" required><br>
+            <label for="image">PRODUCT IMAGE</label><br>
+            <div class="file">
+            <input type="file" id="image" name="image" style="height: 100px; background-color: rgba(196, 216, 248, 0.95); padding-top: 35px; border-width: 20px; border-color: black;" class="custom-file-input" accept="image/*" required><br>
+            </div>
+            <label for="description">PRODUCT DESCRIPTION</label><br>
+            <textarea style="height: 100px; width:460px; margin-top: 10px; border: none;" id="description" name="description" rows=4 cols=20 required></textarea><br>
+            <center><input class="button" type="submit" value="Save">
+            <input class="button" type="reset"></center>
+            </div>
+        </form>
+    </body>
+</html>
