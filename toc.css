@@ -6,22 +6,19 @@ body{
 }
 .container{
     margin-left: 30px;
-    width:90%;
+    width:95%;
 }
 .tab {
   overflow: hidden;
   border-bottom: 1px solid #ccc;
-  padding: 10px 0 10px 0;
-  height:50px;
- 
-  
+  padding: 10px 0 20px 0;
+  height:60px;
 }
 
 .tab p {
   position:absolute;
-  float: left;
   margin-left:10px;
-  margin-top: 10px;
+  
 }
 .tab button {
   position:absolute;
@@ -29,12 +26,12 @@ body{
   width:150px;
   height:30px;
   background-color: orange;
-  float: right;
   border: none;
   outline: none;
   cursor: pointer;
-  margin-left:78.5%;
-  margin-top: 10px;
+  margin-top:10px;
+  float: right;
+  margin-left: 930px;
 }
 
 .tab button:hover {
@@ -60,7 +57,7 @@ img{
 .ed {
     position:absolute;
     border-radius:15px;
-    width:55px;
+    width:auto;
     height:30px;
     background-color:#fff;
     border: 2px solid rgb(5, 130, 248);
@@ -69,3 +66,28 @@ img{
     margin-top: -10px;
     color:rgb(5, 130, 248);
   }
+.pagination {
+    display: inline-block;
+  }
+.pagination li {
+  text-align: center;
+  width:25px;
+  margin: 15px 5px 0 0;
+  display: inline-block;
+  border: 2px solid rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 5px;
+}  
+
+.pagination li.active {
+  background-color:rgb(5, 130, 248);
+  color: white;
+}
+.pagination li.active:hover {
+  background-color:rgb(5, 130, 248);
+  color: white;
+}
+.pagination li:hover {
+  background-color: #ddd;
+
+}

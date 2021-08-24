@@ -4,24 +4,37 @@
         <title>Assignment</title>
         <link rel="stylesheet" href="toc.css">
         <!--<script type="text/javascript" src="toc.js"></script>-->
-
+        <link href="bootstrap.min.css" rel="stylesheet"/>
     </head>
 <body>
     <div class="container">
         <div class="tab">
-            <p style="font-size: 24px;">View Products</p>
-            <button type="button">Add a product</button>
+            <p style="font-size: 24px; align-self: flex-start;">View Products</p>
+            <button style="align-self: flex-end;" type="button">Add a product</button>
         </div>
-
+        <!--<div class="form-group">
+            <select name="state" id="maxRows" class="form-control" style="width: 100px;">
+                <option value="10">All</option>
+                <option value="2">2</option>
+                <option value="5">5</option>
+            </select>
+        </div>-->
         <table style="width:100%" id="table-id">
-            <tr class="t">
+            <thead>
+            <tr>
                 <th>Image</th>
                 <th>Product Name</th>
                 <th>Description</th>
                 <th>Price</th>
                 <th>Unit of measurement</th>
-                <th> </th>
+                <th> 
+                    <div  style="padding-left: 60px;" class="pagination-container">
+                        <nav>
+                            <ul class="pagination"></ul>
+                        </nav>
+                    </div> </th>
             </tr>
+           </thead>
             <tbody>
             <tr>
                 <td><img src="product.jfif" alt="cutting machine"></td>
@@ -29,7 +42,18 @@
                 <td>Cutting job</td>
                 <td>5000</td>
                 <td>Gram</td>
-                <td style="width:10%;">
+                <td style="width:15%;">
+                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
+                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="product-drill.png" alt="cutting machine"></td>
+                <td>DRILLING MACHINE</td>
+                <td>Drilling job</td>
+                <td>4000</td>
+                <td>Gram</td>
+                <td style="width:15%;">
                     <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
                     <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
                 </td>
@@ -40,7 +64,18 @@
                 <td>Cutting job</td>
                 <td>5000</td>
                 <td>Gram</td>
-                <td style="width:10%;">
+                <td style="width:15%;">
+                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
+                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="product-drill.png" alt="cutting machine"></td>
+                <td>DRILLING MACHINE</td>
+                <td>Drilling job</td>
+                <td>4000</td>
+                <td>Gram</td>
+                <td style="width:15%;">
                     <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
                     <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
                 </td>
@@ -51,7 +86,18 @@
                 <td>Cutting job</td>
                 <td>5000</td>
                 <td>Gram</td>
-                <td style="width:10%;">
+                <td style="width:15%;">
+                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
+                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="product-drill.png" alt="cutting machine"></td>
+                <td>DRILLING MACHINE</td>
+                <td>Drilling job</td>
+                <td>4000</td>
+                <td>Gram</td>
+                <td style="width:15%;">
                     <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
                     <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
                 </td>
@@ -62,7 +108,18 @@
                 <td>Cutting job</td>
                 <td>5000</td>
                 <td>Gram</td>
-                <td style="width:10%;">
+                <td style="width:15%;">
+                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
+                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="product-drill.png" alt="cutting machine"></td>
+                <td>DRILLING MACHINE</td>
+                <td>Drilling job</td>
+                <td>4000</td>
+                <td>Gram</td>
+                <td style="width:15%;">
                     <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
                     <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
                 </td>
@@ -73,71 +130,68 @@
                 <td>Cutting job</td>
                 <td>5000</td>
                 <td>Gram</td>
-                <td style="width:10%;">
+                <td style="width:15%;">
                     <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
                     <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
                 </td>
             </tr>
             <tr>
-                <td><img src="product.jfif" alt="cutting machine"></td>
-                <td>CUTTING MACHINE</td>
-                <td>Cutting job</td>
-                <td>5000</td>
+                <td><img src="product-drill.png" alt="cutting machine"></td>
+                <td>DRILLING MACHINE</td>
+                <td>Drilling job</td>
+                <td>4000</td>
                 <td>Gram</td>
-                <td style="width:10%;">
+                <td style="width:15%;">
                     <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
                     <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
                 </td>
             </tr>
-            <tr>
-                <td><img src="product.jfif" alt="cutting machine"></td>
-                <td>CUTTING MACHINE</td>
-                <td>Cutting job</td>
-                <td>5000</td>
-                <td>Gram</td>
-                <td style="width:10%;">
-                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
-                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="product.jfif" alt="cutting machine"></td>
-                <td>CUTTING MACHINE</td>
-                <td>Cutting job</td>
-                <td>5000</td>
-                <td>Gram</td>
-                <td style="width:10%;">
-                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
-                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="product.jfif" alt="cutting machine"></td>
-                <td>CUTTING MACHINE</td>
-                <td>Cutting job</td>
-                <td>5000</td>
-                <td>Gram</td>
-                <td style="width:10%;">
-                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
-                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="product.jfif" alt="cutting machine"></td>
-                <td>CUTTING MACHINE</td>
-                <td>Cutting job</td>
-                <td>5000</td>
-                <td>Gram</td>
-                <td style="width:10%;">
-                    <button style="margin-left: -3.5%;" class="ed" type="button">Edit</button>
-                    <button style="margin-left: 0.5%;"class="ed" type="button">Delete</button>
-                </td>
-            </tr>
-
         </tbody>
         </table>
 
         </div>
+        <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <script>
+            var table='#table-id'
+            $(function(){
+                $('.pagination').html('')
+                var trnum=0
+                var maxRows=5
+                var totalRows=$(table+' tbody tr').length
+                $(table+' tr:gt(0)').each(function(){
+                    trnum++
+                    if(trnum > maxRows){
+                        $(this).hide()
+                    }
+                    if(trnum <= maxRows){
+                        $(this).show()
+                    }
+                })
+                if(totalRows > maxRows){
+                    var pagenum=Math.ceil(totalRows/maxRows)
+                    for(var i=1;i<=pagenum;){
+                        $('.pagination').append('<li data-page="'+ i +'">\<span>'+ i++ +'<span class="sr-only">(current)</span></span>\</li>').show()
+                    }
+                }
+                $('.pagination li:first-child').addClass('active')
+                $('.pagination li').on('click',function(){
+                    var pagenum = $(this).attr('data-page')
+                    var trIndex=0;
+                    $('.pagination li').removeClass('active')
+                    $(this).addClass('active')
+                    $(table+' tr:gt(0)').each(function(){
+                        trIndex++
+                        if(trIndex>(maxRows*pagenum) || trIndex <= ((maxRows*pagenum)-maxRows)){
+                            $(this).hide()
+                        } else{
+                            $(this).show()
+                        }
+                    })
+                })
+            })
+            
+        </script>
 </body>
 
 </html>
